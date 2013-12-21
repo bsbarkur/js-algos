@@ -1,12 +1,12 @@
-function Stack1() {
-  this.stack1 =[];
+function Stack() {
+  this._stack =[];
 }
 
-Stack1.prototype = {
+Stack.prototype = {
 push: function () {
 	      alert(arguments.length);
 	      for(i = 0; i< arguments.length; i++) {
-		      this.stack1.push(arguments[i]);
+		      this._stack.push(arguments[i]);
 	      }
       },
 
@@ -18,13 +18,13 @@ print: function() {
 pop: function() {
 	     //alert(this._stack.length-1);
 	     //alert(this._stack[this._stack.length-1]);
-	     this.stack1.pop(this.stack1[this.stack1.length-1]);
-	     alert(this.stack1);
+	     this._stack.pop(this._stack[this._stack.length-1]);
+	     alert(this._stack);
      }
 };
 
 var obj = new Stack();
-var obj1 = new Stack1();
+var obj1 = new Stack();
 
 /*Testing the stack*/
 obj.push(3,2,5);
