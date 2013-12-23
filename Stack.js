@@ -29,6 +29,5 @@ var obj1 = new Stack();
 /*Testing the stack*/
 obj.push(3,2,5);
 obj1.push(2,5);
-ob1.pop();
 obj.print();
 obj1.print();
